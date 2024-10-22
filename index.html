@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+<div id="main">
+    <!-- Navbar -->
+    <nav id="nav" class="bg-gray-800 fixed w-full top-0 left-0 shadow-md">
+        <div class="max-w-screen-xl flex items-center justify-between p-4">
+            <!-- Logo Section -->
+            <a href="#" class="flex items-center">
+                <img src="./img/Youtube-Logo.png" class="h-8" alt="Logo" />
+            </a>
+            
+            <!-- Search Bar Section -->
+            <div class="relative flex-grow mx-4">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                <input type="text" id="search-navbar" class="rounded-3xl block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Search...">
+            </div>
+  
+            <!-- User Icon Section -->
+            <div id="user" class="flex pl-10 justify-end">
+                <button class="flex text-white">
+                    <i class="fa-solid fa-user fa-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+  
+    <!-- Sidebar -->
+    <div id="left" class="fixed top-16 left-0 w-1/5 bg-gray-800 min-h-screen p-3 overflow-y-auto max-h-[calc(100vh-4rem)] hidden md:block">
+      <div class="flex flex-col space-y-4">
+          <button class="flex items-center text-white bg-transparent border-0">
+              <img src="./img/icons/Icon2.png" alt="">
+              <h6 class="ml-3">Home</h6>
+          </button>
+          <button class="flex items-center text-white bg-transparent border-0">
+              <img src="./img/icons/Icon.png" alt="">
+              <h6 class="ml-3">Explore</h6>
+          </button>
+          <button class="flex items-center text-white bg-transparent border-0">
+              <img src="./img/icons/Icon1.png" alt="">
+              <h6 class="ml-3">Subscriptions</h6>
+          </button>
+          <div class="mt-5">
+              <h4 class="text-white">YOUR LIBRARY</h4>
+              <button class="flex items-center text-white bg-transparent border-0 mt-3">
+                  <img src="./img/icons/Icon4.png" alt="">
+                  <h6 class="ml-3">Library</h6>
+              </button>
+              <button class="flex items-center pt-3 text-white bg-transparent border-0">
+                  <img src="./img/icons/Icon5.png" alt="">
+                  <h6 class="ml-3">History</h6>
+              </button>
+              <button class="flex pt-3 items-center text-white bg-transparent border-0">
+                  <img src="./img/icons/Icon6.png" alt="">
+                  <h6 class="ml-3">Your Videos</h6>
+              </button>
+              <button class="flex pt-3 items-center text-white bg-transparent border-0">
+                  <img src="./img/icons/Icon7.png" alt="">
+                  <h6 class="ml-3">Watch Later</h6>
+              </button>
+              <button class="flex pt-3 items-center text-white bg-transparent border-0">
+                  <img src="./img/icons/Icon8.png" alt="">
+                  <h6 class="ml-3">Liked Videos</h6>
+              </button>
+          </div>
+          <div class="mt-5">
+              <h4 class="text-white">SUBSCRIPTIONS</h4>
+              <button class="flex items-center text-white bg-transparent border-0 mt-3">
+                  <img src="./img/icons/1.png" alt="">
+                  <h6 class="ml-3">James Gouse</h6>
+              </button>
+              <button class="flex pt-3 items-center text-white bg-transparent border-0">
+                  <img src="./img/icons/2.png" alt="">
+                  <h6 class="ml-3">Alan Cooper</h6>
+              </button>
+              <button class="flex pt-3 items-center text-white bg-transparent border-0">
+                  <img src="./img/icons/3.png" alt="">
+                  <h6 class="ml-3">Marcus Levin</h6>
+              </button>
+          </div>
+          <div class="mt-5">
+              <h4 class="text-white">MORE FROM YOUTUBE</h4>
+              <button class="flex pt-3 items-center text-white bg-transparent border-0 mt-3">
+                  <img src="./img/icons/Ic10.png" alt="">
+                  <h6 class="ml-3">YouTube Premium</h6>
+              </button>
+              <button class="flex items-center text-white bg-transparent border-0 mt-3">
+                  <img src="./img/icons/Icon11.png" alt="">
+                  <h6 class="ml-3">Gaming</h6>
+              </button>
+              <button class="flex items-center text-white bg-transparent border-0 mt-3">
+                  <img src="./img/icons/Icon12.png" alt="">
+                  <h6 class="ml-3">Live</h6>
+              </button>
+              <button class="flex items-center text-white bg-transparent border-0 mt-3">
+                  <img src="./img/icons/sports.png" alt="">
+                  <h6 class="ml-3">Sports</h6>
+              </button>
+          </div>
+      </div>
+  </div>
+  
+
+    <!-- Main Content -->
+    <div class=" lg:ml-[20%] mt-16 p-5 bg-gray-900 flex flex-wrap">
+        <div class="w-full md:w-1/3 p-2">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/XkTPSueRTm0" title="Uppum Mulakum 3" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+            <p class="text-white text-xs">James Gouse</p>
+            <span class="text-white text-xs">15K Views .1 week ago</span>
+        </div>
+        <div class="w-full md:w-1/3 p-2">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/2Zhfq5a3GlE" title="Video Title" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+            <p class="text-white text-xs">James Gouse</p>
+            <span class="text-white text-xs">15K Views .1 week ago</span>
+        </div>
+        <div class="w-full md:w-1/3 p-2">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/57Rmt97W818" title="Video Title" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+            <p class="text-white text-xs">James Gouse</p>
+            <span class="text-white text-xs">15K Views .1 week ago</span>
+        </div>
+        <div class="w-full md:w-1/3 p-2">
+          <div class="aspect-w-16 aspect-h-9">
+            <iframe class="w-full h-full"  src="https://www.youtube.com/embed/sQw73ncen-8" title="Video Title" frameborder="0" allowfullscreen></iframe>
+        </div>
+          <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+          <p class="text-white text-xs">James Gouse</p>
+          <span class="text-white text-xs">15K Views .1 week ago</span>
+      </div>
+      <div class="w-full md:w-1/3 p-2">
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/KxyXNtYgt3k" title="Video Title" frameborder="0" allowfullscreen></iframe>
+      </div>
+        <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+        <p class="text-white text-xs">James Gouse</p>
+        <span class="text-white text-xs">15K Views .1 week ago</span>
+    </div>
+    <div class="w-full md:w-1/3 p-2">
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/yqaLSlPOUxM" title="Video Title" frameborder="0" allowfullscreen></iframe>
+    </div>
+      <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+      <p class="text-white text-xs">James Gouse</p>
+      <span class="text-white text-xs">15K Views .1 week ago</span>
+  </div>
+  <div class="w-full md:w-1/3 p-2">
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/46cXFUzR9XM" title="Video Title" frameborder="0" allowfullscreen></iframe>
+  </div>
+    <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+    <p class="text-white text-xs">James Gouse</p>
+    <span class="text-white text-xs">15K Views .1 week ago</span>
+</div>
+<div class="w-full md:w-1/3 p-2">
+  <div class="aspect-w-16 aspect-h-9">
+    <iframe class="w-full h-full" src="https://www.youtube.com/embed/aFsGDcy-6hc" title="Video Title" frameborder="0" allowfullscreen></iframe>
+</div>
+  <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+  <p class="text-white text-xs">James Gouse</p>
+  <span class="text-white text-xs">15K Views .1 week ago</span>
+</div>
+<div class="w-full md:w-1/3 p-2">
+  <div class="aspect-w-16 aspect-h-9">
+    <iframe class="w-full h-full" src="https://www.youtube.com/embed/AKfp_exNrA4" title="Video Title" frameborder="0" allowfullscreen></iframe>
+</div>
+  <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+  <p class="text-white text-xs">James Gouse</p>
+  <span class="text-white text-xs">15K Views .1 week ago</span>
+</div>
+<div class="w-full md:w-1/3 p-2">
+  <div class="aspect-w-16 aspect-h-9">
+    <iframe class="w-full h-full"  src="https://www.youtube.com/embed/1sGfiso14Z0" title="Video Title" frameborder="0" allowfullscreen></iframe>
+</div>
+  <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+  <p class="text-white text-xs">James Gouse</p>
+  <span class="text-white text-xs">15K Views .1 week ago</span>
+</div>
+<div class="w-full md:w-1/3 p-2">
+  <div class="aspect-w-16 aspect-h-9">
+    <iframe class="w-full h-full"  src="https://www.youtube.com/embed/o6RZ6Ocr-Vk" title="Video Title" frameborder="0" allowfullscreen></iframe>
+</div>
+  <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+  <p class="text-white text-xs">James Gouse</p>
+  <span class="text-white text-xs">15K Views .1 week ago</span>
+</div>
+<div class="w-full md:w-1/3 p-2">
+  <div class="aspect-w-16 aspect-h-9">
+    <iframe class="w-full h-full"  src="https://www.youtube.com/embed/QmcMjeCl0Gk" title="Video Title" frameborder="0" allowfullscreen></iframe>
+</div>
+  <h5 class="text-white mt-3">Lorem ipsum dolor, sit amet consectetur ipsum dolor, sit amet consectetur</h5>
+  <p class="text-white text-xs">James Gouse</p>
+  <span class="text-white text-xs">15K Views .1 week ago</span>
+</div>
+        
+
+       
+    </div>
+</div>
+
+</body>
+</html>
